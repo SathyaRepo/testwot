@@ -1,0 +1,32 @@
+{
+  "@context": "https://www.w3.org/2019/wot/td/v1",
+  "title": "systac2",
+  "@type": "tm:ThingModel",
+  "id": "systac2",
+  "securityDefinitions": {
+    "basic_sc": {
+      "scheme": "basic"
+    }
+  },
+  "security": "basic_sc",
+  "properties": {
+    "time": {
+      "title": "time",
+      "observable": true,
+      "readOnly": false,
+      "type": "string",
+      "forms": [
+        {
+          "op": [
+            "writeproperty",
+            "readproperty",
+            "observeproperty"
+          ],
+          "href": "/"
+        }
+      ]
+    }
+  },
+  "actions": {},
+  "events": {}
+}
